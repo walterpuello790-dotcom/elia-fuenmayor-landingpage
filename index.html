@@ -1,0 +1,692 @@
+'<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
+  <meta name="theme-color" content="#0B0C15">
+  <meta name="robots" content="index, follow">
+
+  <!-- ===== SEO BÁSICO (3 SERVICIOS) ===== -->
+  <title>Elia Fuenmayor • Seguros, Taxes y Asesoría Migratoria en Texas y Florida</title>
+  <meta name="description" content="Asesoría en español para seguros de salud y vida, preparación de taxes y orientación migratoria en Texas y Florida. Atención personalizada para ti y tu familia.">
+  <!-- ⚠️ CAMBIAR CUANDO CONECTEN EL DOMINIO: sustituir por https://eliafuenmayor.com/ -->
+  <link rel="canonical" href="https://elia-fuenmayor-landing.vercel.app/">
+
+  <!-- ===== OPEN GRAPH (WhatsApp, Facebook, LinkedIn) ===== -->
+  <meta property="og:type" content="website">
+  <!-- ⚠️ CAMBIAR CUANDO CONECTEN EL DOMINIO -->
+  <meta property="og:url" content="https://elia-fuenmayor-landing.vercel.app/">
+  <meta property="og:title" content="Elia Fuenmayor • Seguros, Taxes y Asesoría Migratoria">
+  <meta property="og:description" content="Asesoría profesional 100% personalizada y en tu idioma: seguros de salud y vida, taxes y orientación migratoria en Texas y Florida.">
+  <!-- ⚠️ CAMBIAR CUANDO CONECTEN EL DOMINIO (imagen a crear en el paso 2) -->
+  <meta property="og:image" content="https://elia-fuenmayor-landing.vercel.app/img/og/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="es_US">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:site_name" content="Elia Fuenmayor">
+
+  <!-- ===== TWITTER CARD ===== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Elia Fuenmayor • Seguros, Taxes y Asesoría Migratoria">
+  <meta name="twitter:description" content="Asesoría profesional 100% personalizada y en tu idioma: seguros, taxes y orientación migratoria en Texas y Florida.">
+  <!-- ⚠️ CAMBIAR CUANDO CONECTEN EL DOMINIO -->
+  <meta name="twitter:image" content="https://elia-fuenmayor-landing.vercel.app/img/og/og-image.jpg">
+
+  <!-- ===== FAVICON (archivos a crear en el paso 3) ===== -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <!-- ===== GOOGLE SEARCH CONSOLE (se rellena en el paso 8) ===== -->
+  <!-- <meta name="google-site-verification" content="PENDIENTE"> -->
+
+  <!-- ===== DATOS ESTRUCTURADOS (Schema.org) ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Elia Fuenmayor",
+    "description": "Asesoría en español para seguros de salud y vida, preparación de taxes y orientación migratoria en Texas y Florida.",
+    "url": "https://elia-fuenmayor-landing.vercel.app/",
+    "image": "https://elia-fuenmayor-landing.vercel.app/img/og/og-image.jpg",
+    "telephone": "+1-210-559-8731",
+    "areaServed": [
+      { "@type": "State", "name": "Texas" },
+      { "@type": "State", "name": "Florida" },
+      { "@type": "State", "name": "Georgia" },
+      { "@type": "State", "name": "Tennessee" }
+    ],
+    "knowsLanguage": ["es", "en"],
+    "serviceType": [
+      "Seguros de salud",
+      "Seguros de vida",
+      "Medicare",
+      "Seguro dental",
+      "Seguro de visión",
+      "Seguro de accidentes",
+      "Preparación de taxes",
+      "Asesoría migratoria"
+    ],
+    "sameAs": [
+      "https://www.instagram.com/eliainsurance",
+      "https://www.facebook.com/profile.php?id=61562801142557"
+    ]
+  }
+  </script>
+
+  <!-- ===== FONTS ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet">
+
+  <!-- ===== CSS ===== -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============================================================ -->
+  <!--  NAVBAR (SIEMPRE VISIBLE)                                    -->
+  <!-- ============================================================ -->
+ <nav class="navbar-premium" id="navbar">
+  <ul class="nav-links" id="navLinks">
+    <li data-section="inicio" class="nav-item active" data-i18n="nav_inicio">Inicio</li>
+    <span class="nav-divider"></span>
+    <li data-section="servicios" class="nav-item" data-i18n="nav_servicios">Servicios</li>
+    <span class="nav-divider"></span>
+    <li data-section="testimonios" class="nav-item" data-i18n="nav_testimonios">Testimonios</li>
+    <span class="nav-divider"></span>
+    <li data-section="contacto" class="nav-item" data-i18n="nav_contacto">Contacto</li>
+    <div class="nav-indicator" id="indicator"></div>
+  </ul>
+</nav> 
+
+  <!-- ============================================================ -->
+  <!--  SELECTOR DE IDIOMA (ESQUINA SUPERIOR DERECHA)              -->
+  <!-- ============================================================ -->
+  <div class="language-selector" id="languageSelector">
+    <button class="lang-toggle" id="langToggle">
+      <svg class="lang-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"/>
+        <line x1="2" y1="12" x2="22" y2="12"/>
+        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+      </svg>
+      <span class="lang-current" id="langCurrent">ESP</span>
+      <svg class="lang-arrow" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"/>
+      </svg>
+    </button>
+    <ul class="lang-dropdown" id="langDropdown" role="listbox">
+      <li role="option" data-lang="es" class="lang-option active" aria-selected="true">🇪🇸 ESP</li>
+      <li role="option" data-lang="en" class="lang-option" aria-selected="false">🇺🇸 ENG</li>
+    </ul>
+  </div>
+
+  <!-- ============================================================ -->
+  <!--  SECCIÓN 1: INICIO (HERO)                                   -->
+  <!-- ============================================================ -->
+  <section id="inicio" class="hero-section">
+    <div class="hero-container">
+      <!-- Columna Izquierda -->
+      <div class="hero-content">
+       <h1 class="hero-title">
+  <span class="hero-title-part1" data-i18n="hero_titulo_1">Encontramos</span>
+  <span class="hero-title-part2" data-i18n="hero_titulo_2">tu mejor solución</span>
+  <span class="hero-title-part3">
+    <span data-i18n="hero_titulo_3">en</span>
+    <span class="rotating-word" id="rotatingWord">seguros</span>
+  </span>
+</h1> 
+   <p class="hero-subtitle" data-i18n="hero_subtitulo">
+  Asesoría profesional 100% personalizada y en tu idioma para ti y para toda tu familia
+</p>     
+        <div class="hero-buttons">
+      <a 
+  href="https://wa.me/12105598731?text=Hola,%20me%20gustar%C3%ADa%20cotizar%20un%20seguro." 
+  class="btn-primary" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  data-i18n="hero_btn_primary"
+  data-i18n-href="wa_hero_cotiza"
+>Cotiza</a>
+   
+<a 
+  href="https://wa.me/12105598731?text=Hola,%20vengo%20desde%20su%20p%C3%A1gina%20web,%20me%20gustar%C3%ADa%20tener%20m%C3%A1s%20informaci%C3%B3n." 
+  class="btn-secondary" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  data-i18n="hero_btn_secondary"
+  data-i18n-href="wa_hero_contacto"
+>Contáctanos</a>
+        </div>
+      </div>
+
+      <!-- Columna Derecha -->
+      <div class="hero-image">
+        <div class="hero-image-placeholder">
+          <img 
+            src="img/hero/elia-hero.webp" 
+            alt="Asesoría en seguros" 
+            class="hero-img"
+            id="heroImage"
+          >
+        </div>
+      <div class="hero-badge">
+  <span class="badge-dot"></span>
+  <span data-i18n="hero_badge">Confianza · Respaldo · Experiencia</span>
+</div>  
+      </div>
+    </div>
+
+    <!-- Decoración -->
+    <div class="hero-decoration">
+      <div class="hero-blob hero-blob-1"></div>
+      <div class="hero-blob hero-blob-2"></div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!--  SECCIÓN 2: SERVICIOS                                        -->
+  <!--  (Carrusel de logos + Tarjetas de servicios)                -->
+  <!-- ============================================================ -->
+  <section id="servicios" class="services-section-wrapper">
+    
+    <!-- Título de sección -->
+    <div class="section-header">
+     <h2 class="section-title">
+  <span data-i18n="servicios_titulo_1">Nuestros</span>
+  <span class="section-title-highlight" data-i18n="servicios_titulo_2">Servicios</span>
+</h2>
+<p class="section-subtitle" data-i18n="servicios_subtitulo">Te ayudamos a encontrar la cobertura que mejor se adapta a ti y a tu familia</p> 
+    </div>
+
+    <!-- === CARRUSEL DE LOGOS === -->
+    <div class="carousel-section" aria-label="Aseguradoras con las que trabajamos">
+      <div class="carousel-container">
+        <div class="carousel-row" id="topRow">
+          <div class="carousel-track top-track" id="topTrack"></div>
+        </div>
+        <div class="carousel-row" id="bottomRow">
+          <div class="carousel-track bottom-track" id="bottomTrack"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- === TARJETAS DE SERVICIOS === -->
+    <div class="services-section" aria-label="Carrusel de servicios premium">
+      <button class="scroll-arrow-btn arrow-left" id="scrollLeftBtn" aria-label="Desplazar carrusel hacia la izquierda">
+        <span class="arrow-symbol">←</span>
+      </button>
+
+      <div class="carousel-container" id="carouselContainer">
+        <!-- Las tarjetas se generan dinámicamente con JS -->
+      </div>
+
+      <button class="scroll-arrow-btn arrow-right" id="scrollRightBtn" aria-label="Desplazar carrusel hacia la derecha">
+        <span class="arrow-symbol">→</span>
+      </button>
+    </div>
+
+<!-- ============================================================ -->
+<!--  SECCIÓN: PREGUNTAS SOBRE SERVICIOS (ZIGZAG)                 -->
+<!-- ============================================================ -->
+<div class="faq-zigzag-section" aria-label="Preguntas frecuentes sobre servicios">
+  <div class="faq-zigzag-container">
+
+    <!-- Fila 1: Imagen izquierda / Texto derecha -->
+    <div class="faq-row faq-row-1">
+      <div class="faq-image">
+        <img 
+          src="img/faq/familia.webp" 
+          alt="Familia hispana compartiendo un momento en el parque"
+          loading="lazy"
+          width="800"
+          height="800"
+        >
+      </div>
+      <div class="faq-text">
+       <h3 class="faq-title">
+  <span data-i18n="faq1_pregunta">¿El estatus interfiere para tener un seguro?</span>
+  <em class="faq-highlight" data-i18n="faq1_respuesta">No</em>
+</h3>
+<p data-i18n="faq1_texto">En Estados Unidos existen opciones de cobertura médica y protección diseñadas para la comunidad hispana, independientemente de tu situación actual. Evaluamos tu caso con total confidencialidad para encontrar un plan que se adapte a ti y a tu familia, sin complicaciones ni sorpresas.</p> 
+      </div>
+    </div>
+
+    <!-- Fila 2: Texto izquierda / Imagen derecha -->
+    <div class="faq-row faq-row-2">
+      <div class="faq-text">
+      <h3 class="faq-title">
+  <span data-i18n="faq2_pregunta">¿Hacer tus taxes o trámites te pone en riesgo?</span>
+  <em class="faq-highlight" data-i18n="faq2_respuesta">No</em>
+</h3>
+<p data-i18n="faq2_texto">El IRS y las autoridades migratorias manejan procesos independientes. Presentar tus impuestos en orden demuestra tu responsabilidad en este país y protege el futuro de tu familia con total reserva profesional y sin riesgos innecesarios.</p>  
+      </div>
+      <div class="faq-image">
+        <img 
+          src="img/faq/progreso.webp" 
+          alt="Persona emprendedora avanzando con actitud positiva"
+          loading="lazy"
+          width="800"
+          height="800"
+        >
+      </div>
+    </div>
+
+    <!-- Fila 3: Imagen izquierda / Texto derecha -->
+    <div class="faq-row faq-row-3">
+      <div class="faq-image">
+        <img 
+          src="img/faq/elia.webp" 
+          alt="Elia Fuenmayor, asesora profesional"
+          loading="lazy"
+          width="800"
+          height="800"
+        >
+      </div>
+      <div class="faq-text">
+      <h3 class="faq-title">
+  <span data-i18n="faq3_pregunta">¿Quién te acompaña en el proceso?</span>
+  <em class="faq-highlight" data-i18n="faq3_respuesta">Elia Fuenmayor</em>
+</h3>
+<p data-i18n="faq3_texto">Tras años ayudando a la comunidad hispana a navegar el sistema de seguros e impuestos, entiendo perfectamente las dudas y el miedo a cometer errores. Mi propósito es darte una atención 100% humana, cercana y transparente, para que tomes cada decisión con absoluta tranquilidad.</p>  
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+  <!-- ============================================================ -->
+  <!--  SECCIÓN 3: TESTIMONIOS                                     -->
+  <!-- ============================================================ -->
+ <section id="testimonios" class="testimonials-section-wrapper">
+  <div class="section-header">
+    <h2 class="section-title">
+      <span data-i18n="social_titulo_1">Lo que dicen</span>
+      <span class="section-title-highlight" data-i18n="social_titulo_2">nuestros clientes</span>
+    </h2>
+    <p class="section-subtitle" data-i18n="social_subtitulo">Experiencias reales de personas que confiaron en nosotros</p>
+  </div>
+
+  <div class="social-proof-grid">
+    
+    <!-- Tarjeta 1: Testimonio rotativo -->
+    <div class="social-proof-card testimonial-card-rotate">
+      <span class="quote-mark" aria-hidden="true">❝</span>
+      
+      <div class="testimonial-slider">
+        
+        <div class="testimonial-slide active">
+          <p class="testimonial-quote" data-i18n="test1_texto">"Excelente servicio, me ayudaron a encontrar el plan perfecto para mi familia."</p>
+          <div class="testimonial-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+          <p class="testimonial-author" data-i18n="test1_autor">— María G.</p>
+        </div>
+        
+        <div class="testimonial-slide">
+          <p class="testimonial-quote" data-i18n="test2_texto">"Muy profesionales, resolvieron todas mis dudas desde el primer momento."</p>
+          <div class="testimonial-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+          <p class="testimonial-author" data-i18n="test2_autor">— Javier R.</p>
+        </div>
+        
+        <div class="testimonial-slide">
+          <p class="testimonial-quote" data-i18n="test3_texto">"Recomendados 100%, la atención en español fue muy profesional."</p>
+          <div class="testimonial-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+          <p class="testimonial-author" data-i18n="test3_autor">— Claudia M.</p>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Tarjeta 2: Familias aseguradas -->
+    <div class="social-proof-card stat-card">
+      <div class="stat-value">
+        <span class="stat-number" data-count="500">0</span><span class="stat-plus">+</span>
+      </div>
+      <p class="stat-label">
+        <span data-i18n="stat_familias_1">Familias</span><br>
+        <span data-i18n="stat_familias_2">aseguradas</span>
+      </p>
+    </div>
+
+    <!-- Tarjeta 3: Años de experiencia -->
+    <div class="social-proof-card stat-card">
+      <div class="stat-value">
+        <span class="stat-number" data-count="10">0</span><span class="stat-plus">+</span>
+      </div>
+      <p class="stat-label">
+        <span data-i18n="stat_años_1">Años de</span><br>
+        <span data-i18n="stat_años_2">experiencia</span>
+      </p>
+    </div>
+
+  </div>
+</section>
+ <!-- ============================================================ -->
+<!--  SECCIÓN 4: CONTACTO (Formulario multi-step)                -->
+<!-- ============================================================ -->
+<section id="contacto" class="contact-section">
+  <div class="section-header">
+    <h2 class="section-title">
+  <span data-i18n="contacto_titulo_1">Hablemos de</span>
+  <span class="section-title-highlight" data-i18n="contacto_titulo_2">tu caso</span>
+</h2>
+<p class="section-subtitle" data-i18n="contacto_subtitulo">Déjanos tus datos y te contactamos en menos de 24 horas</p>
+  </div>
+
+  <div class="contact-form-wrapper">
+    <!-- Barra de progreso -->
+    <div class="form-progress" role="status" aria-live="polite">
+      <span class="form-progress-text" id="stepInfo" data-i18n="form_paso">Paso 1 de 3</span>
+      <div class="form-progress-bar">
+        <div class="form-progress-fill" id="progressFill"></div>
+      </div>
+    </div>
+
+    <!-- Formulario -->
+    <form class="contact-form" id="contactForm" action="https://formspree.io/f/moevbnbk" method="POST" novalidate>
+      
+      <!-- PASO 1: Datos personales -->
+      <div class="form-step active" data-step="0">
+        <h3 class="form-step-title" data-i18n="form_paso1_titulo">Tus datos</h3>
+<div class="form-field">
+  <input type="text" name="nombre" id="nombre" placeholder="Ej: Juan" required data-i18n-placeholder="form_nombre_ph">
+</div>
+<div class="form-field">
+  <input type="text" name="apellido" id="apellido" placeholder="Ej: Pérez" required data-i18n-placeholder="form_apellido_ph">
+</div>
+      </div>
+
+      <!-- PASO 2: Contacto -->
+      <div class="form-step" data-step="1">
+        <h3 class="form-step-title" data-i18n="form_paso2_titulo">¿Cómo te contactamos?</h3>
+<div class="form-field">
+  <input type="email" name="email" id="email" placeholder="Ej: juan@email.com" required data-i18n-placeholder="form_email_ph">
+</div>
+<div class="form-field">
+  <input type="tel" name="telefono" id="telefono" placeholder="Ej: 210 555 1234" required pattern="[0-9\s\-\(\)]+" data-i18n-placeholder="form_telefono_ph">
+</div>
+<div class="form-field">
+  <select name="estado" id="estado" required>
+    <option value="" disabled selected data-i18n="form_estado_ph">Selecciona tu estado</option>
+    <option value="Texas" data-i18n="form_estado_texas">Texas</option>
+    <option value="Florida" data-i18n="form_estado_florida">Florida</option>
+    <option value="Georgia" data-i18n="form_estado_georgia">Georgia</option>
+    <option value="Tennessee" data-i18n="form_estado_tennessee">Tennessee</option>
+    <option value="Otro" data-i18n="form_estado_otro">Otro estado</option>
+  </select>
+</div>
+      </div>
+
+      <!-- PASO 3: Mensaje -->
+      <div class="form-step" data-step="2">
+      <h3 class="form-step-title" data-i18n="form_paso3_titulo">¿Qué necesitas?</h3>
+<div class="form-field">
+  <select name="tipo_seguro" id="tipo_seguro" required>
+    <option value="" disabled selected data-i18n="form_servicio_ph">Selecciona un servicio</option>
+    <option value="Familiar" data-i18n="form_servicio_familiar">Seguro Familiar</option>
+    <option value="Medicare" data-i18n="form_servicio_medicare">Medicare</option>
+    <option value="Dental" data-i18n="form_servicio_dental">Dental</option>
+    <option value="Vision" data-i18n="form_servicio_vision">Visión</option>
+    <option value="Accidente" data-i18n="form_servicio_accidente">Accidentes</option>
+    <option value="Vida" data-i18n="form_servicio_vida">Seguro de Vida</option>
+    <option value="Taxes" data-i18n="form_servicio_taxes">Taxes</option>
+    <option value="Migracion" data-i18n="form_servicio_migracion">Migración</option>
+  </select>
+</div>
+<div class="form-field">
+  <textarea name="mensaje" id="mensaje" rows="4" placeholder="Cuéntanos brevemente qué necesitas..." required data-i18n-placeholder="form_mensaje_ph"></textarea>
+</div>  
+      </div>
+
+      <!-- Mensaje de error general -->
+      <div class="form-error-message" id="formError" role="alert"></div>
+
+      <!-- Navegación -->
+      <div class="form-navigation">
+       <button type="button" class="btn-secondary form-btn-back" id="btnBack" style="display: none;" data-i18n="form_btn_atras">Atrás</button>
+<button type="button" class="btn-primary form-btn-next" id="btnNext" data-i18n="form_btn_siguiente">Siguiente</button>
+<button type="submit" class="btn-primary form-btn-submit" id="btnSubmit" style="display: none;" data-i18n="form_btn_enviar">Enviar</button>
+      </div>
+    </form>
+
+    <!-- Mensaje de éxito -->
+    <div class="form-success" id="formSuccess" style="display: none;">
+  <div class="form-success-icon">✓</div>
+  <h3 data-i18n="form_exito_titulo">¡Gracias!</h3>
+  <p data-i18n="form_exito_texto">Te contactamos pronto.</p>
+</div>
+  </div>
+</section>
+<!-- ============================================================ -->
+<!--  SECCIÓN: POLÍTICA DE COOKIES                                -->
+<!-- ============================================================ -->
+<section id="politica-cookies" class="cookies-policy-section">
+  <div class="section-header">
+    <h2 class="section-title">
+      <span data-i18n="politica_titulo_1">Política de</span>
+      <span class="section-title-highlight" data-i18n="politica_titulo_2">Cookies</span>
+    </h2>
+    <p class="section-subtitle">
+      <span data-i18n="politica_actualizacion">Última actualización:</span>
+      <span id="cookiePolicyDate"></span>
+    </p>
+  </div>
+
+  <div class="cookies-policy-content">
+    <h3 data-i18n="politica_que_son_titulo">¿Qué son las cookies?</h3>
+    <p data-i18n="politica_que_son_texto">Las cookies son pequeños archivos de texto que se almacenan en tu dispositivo cuando visitas un sitio web. Nos permiten recordar tus preferencias, analizar cómo usas la web y mostrarte contenido relevante.</p>
+
+    <h3 data-i18n="politica_tipos_titulo">¿Qué tipos de cookies usamos?</h3>
+    <ul>
+      <li><strong data-i18n="politica_tipo_necesarias_titulo">Necesarias:</strong> <span data-i18n="politica_tipo_necesarias_texto">imprescindibles para que el sitio funcione. No se pueden desactivar.</span></li>
+      <li><strong data-i18n="politica_tipo_analiticas_titulo">Analíticas:</strong> <span data-i18n="politica_tipo_analiticas_texto">nos ayudan a entender cómo interactúas con la web (Google Analytics).</span></li>
+      <li><strong data-i18n="politica_tipo_marketing_titulo">Marketing:</strong> <span data-i18n="politica_tipo_marketing_texto">permiten mostrarte anuncios relevantes en otras plataformas (Meta Pixel).</span></li>
+    </ul>
+
+    <h3 data-i18n="politica_gestionar_titulo">¿Cómo gestionar tus preferencias?</h3>
+    <p data-i18n="politica_gestionar_texto">Puedes cambiar tus preferencias en cualquier momento desde el siguiente botón:</p>
+    <button type="button" class="cookie-btn cookies-policy-btn" onclick="window.openCookieSettings()" data-i18n="politica_gestionar_btn">Cambiar mis preferencias de cookies</button>
+
+    <h3 data-i18n="politica_mas_info_titulo">Más información</h3>
+    <p>
+      <span data-i18n="politica_mas_info_texto">Si tienes dudas sobre cómo usamos las cookies, puedes contactarnos a través de nuestro</span>
+      <a href="#contacto" class="cookie-link" data-i18n="politica_mas_info_link">formulario de contacto</a>
+      <span data-i18n="politica_mas_info_final">o por WhatsApp.</span>
+    </p>
+  </div>
+</section>
+ <!-- ============================================================ -->
+<!--  FOOTER                                                      -->
+<!-- ============================================================ -->
+<footer class="footer" role="contentinfo">
+  <div class="footer-container">
+
+    <!-- Bloque 1: Marca -->
+    <div class="footer-brand">
+  <span class="footer-name">Elia Fuenmayor</span>
+  <span class="footer-tagline" data-i18n="footer_tagline1">Seguros de Salud y Vida</span>
+  <span class="footer-tagline" data-i18n="footer_tagline2">Asesoría en español para la comunidad hispana</span>
+</div>
+
+    <!-- Bloque 2: Redes sociales -->
+    <div class="footer-social" aria-label="Redes sociales">
+      <a 
+        href="https://www.instagram.com/eliainsurance" 
+        class="footer-social-link" 
+        aria-label="Instagram"
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+        </svg>
+      </a>
+
+      <a 
+        href="https://www.facebook.com/profile.php?id=61562801142557" 
+        class="footer-social-link" 
+        aria-label="Facebook"
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+        </svg>
+      </a>
+
+      <a 
+        href="https://wa.me/12105598731?text=Hola,%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios." 
+        data-i18n-href="wa_footer"
+        class="footer-social-link" 
+        aria-label="WhatsApp"
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+      </a>
+
+      <!-- Email: descomenta cuando tengas la dirección -->
+      <!--
+      <a 
+        href="mailto:contacto@eliafuenmayor.com" 
+        class="footer-social-link" 
+        aria-label="Email"
+      >
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+        </svg>
+      </a>
+      -->
+    </div>
+
+    <!-- Bloque 3: Legal + Copyright -->
+   <div class="footer-legal">
+  <span>© <span id="year"></span> Elia Fuenmayor</span>
+  <span data-i18n="footer_licencia">Agente licenciada en Texas y Florida. Servicios de cobertura disponibles en Georgia y Tennessee mediante agentes designados.</span>
+  <a href="#politica-cookies" class="cookie-link" data-i18n="footer_politica">Política de Cookies</a>
+</div> 
+
+  </div>
+
+  <!-- Disclaimer legal -->
+  <div class="footer-disclaimer">
+  <p data-i18n="footer_disclaimer1">
+    La información contenida en este sitio web es únicamente con fines informativos y no constituye asesoría legal, fiscal, financiera o de seguros. Las coberturas, primas, disponibilidad y elegibilidad varían según el estado, la aseguradora y la situación individual de cada persona. Toda cotización está sujeta a verificación y aprobación por parte de la aseguradora correspondiente.
+  </p>
+  <p data-i18n="footer_disclaimer2">
+    Elia Fuenmayor es una agente de seguros licenciada para operar en los estados de Texas y Florida. Los servicios descritos en este sitio no están disponibles en otros estados. La información personal que compartas a través de este sitio o por WhatsApp será tratada con estricta confidencialidad y no será compartida con terceros sin tu consentimiento, salvo cuando sea necesario para procesar una solicitud de cobertura.
+  </p>
+</div>
+</footer>
+  
+
+  <!-- ============================================================ -->
+  <!--  MODAL (para las tarjetas de servicio)                      -->
+  <!-- ============================================================ -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Cerrar modal">×</button>
+      <div id="modalContent">
+        <h2 class="modal-title" id="modalTitle">Título</h2>
+        <p class="modal-intro" id="modalIntro"></p>
+        <ul class="modal-points" id="modalPoints"></ul>
+      </div>
+    </div>
+  </div>
+ <!-- Sticky WhatsApp -->
+<a 
+   href="https://wa.me/12105598731?text=Hola,%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios."
+  data-i18n-href="wa_sticky"
+  class="whatsapp-sticky"
+  id="whatsappSticky"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Contactar por WhatsApp"
+>
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+<script src="js/i18n.js"></script>
+  <!-- ============================================================ -->
+  <!--  JAVASCRIPT                                                 -->
+  <!-- ============================================================ -->
+  <script src="js/script.js"></script>
+  <!-- ============================================================ -->
+<!--  BANNER DE COOKIES                                           -->
+<!-- ============================================================ -->
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-modal="true" aria-labelledby="cookieTitle">
+  <div class="cookie-banner-inner">
+    <h3 class="cookie-title" id="cookieTitle" data-i18n="cookie_titulo">🍪 Usamos cookies</h3>
+    <p class="cookie-text">
+      <span data-i18n="cookie_texto">Utilizamos cookies propias y de terceros para analizar el uso del sitio y mejorar tu experiencia. Puedes aceptarlas todas, rechazarlas o configurarlas según tus preferencias. Más info en nuestra</span>
+      <a href="#politica-cookies" class="cookie-link" data-i18n="cookie_politica_link">Política de Cookies</a>.
+    </p>
+
+    <!-- Vista principal: 3 botones -->
+    <div class="cookie-actions" id="cookieActions">
+      <button type="button" class="cookie-btn" data-action="reject-all" data-i18n="cookie_rechazar">Rechazar todas</button>
+      <button type="button" class="cookie-btn" data-action="customize" data-i18n="cookie_personalizar">Personalizar</button>
+      <button type="button" class="cookie-btn" data-action="accept-all" data-i18n="cookie_aceptar">Aceptar todas</button>
+    </div>
+
+    <!-- Vista personalización -->
+    <div class="cookie-customize" id="cookieCustomize" style="display: none;">
+      <div class="cookie-option">
+        <div class="cookie-option-info">
+          <strong data-i18n="cookie_necesarias_titulo">Necesarias</strong>
+          <p data-i18n="cookie_necesarias_texto">Imprescindibles para el funcionamiento del sitio. No se pueden desactivar.</p>
+        </div>
+        <label class="cookie-switch">
+          <input type="checkbox" checked disabled>
+          <span class="cookie-slider"></span>
+        </label>
+      </div>
+
+      <div class="cookie-option">
+        <div class="cookie-option-info">
+          <strong data-i18n="cookie_analiticas_titulo">Analíticas</strong>
+          <p data-i18n="cookie_analiticas_texto">Nos ayudan a entender cómo usas la web (Google Analytics).</p>
+        </div>
+        <label class="cookie-switch">
+          <input type="checkbox" id="cookieAnalytics">
+          <span class="cookie-slider"></span>
+        </label>
+      </div>
+
+      <div class="cookie-option">
+        <div class="cookie-option-info">
+          <strong data-i18n="cookie_marketing_titulo">Marketing</strong>
+          <p data-i18n="cookie_marketing_texto">Permiten mostrarte anuncios relevantes (Meta Pixel).</p>
+        </div>
+        <label class="cookie-switch">
+          <input type="checkbox" id="cookieMarketing">
+          <span class="cookie-slider"></span>
+        </label>
+      </div>
+
+      <div class="cookie-actions cookie-actions-secondary">
+        <button type="button" class="cookie-btn" data-action="back" data-i18n="cookie_volver">Volver</button>
+        <button type="button" class="cookie-btn" data-action="save-preferences" data-i18n="cookie_guardar">Guardar preferencias</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!--  CONFIGURACIÓN DE IDs -->
+<!-- ============================================================ -->
+<script>
+  // ⚠️ REEMPLAZA ESTOS IDs POR LOS TUYOS REALES
+  window.__ANALYTICS_ID__ = 'G-XXXXXXXXXX';      // Google Analytics 4
+  window.__META_PIXEL_ID__ = '1096710659515343'; // Meta Pixel
+</script>
+
+<!-- ============================================================ -->
+<!--  JS DEL BANNER (debe ir ANTES que otros scripts)             -->
+<!-- ============================================================ -->
+<script src="js/cookies.js" defer></script>
+</body>
+</html>
