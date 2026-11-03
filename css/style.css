@@ -2266,3 +2266,11 @@ img {
   transform: translateZ(0);
   backface-visibility: hidden;
 }
+@media (max-width: 640px) {
+  /* ... código que ya tienes ... */
+
+  /* Añadir espacio al final del footer para que la navbar no tape el texto */
+  .footer {
+    padding-bottom: calc(100px + env(safe-area-inset-bottom, 0px));
+  }
+}
