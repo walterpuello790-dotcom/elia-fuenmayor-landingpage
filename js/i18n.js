@@ -145,6 +145,22 @@ const translations = {
     politica_mas_info_link: "formulario de contacto",
     politica_mas_info_final: "o por WhatsApp.",
 
+         // POLÍTICA DE PRIVACIDAD
+    priv_titulo_1: "Política de",
+    priv_titulo_2: "Privacidad",
+    priv_actualizacion: "Última actualización:",
+    priv_1_titulo: "1. Información que recopilamos",
+    priv_1_texto: "Cuando utilizas el formulario de contacto de este sitio web, recopilamos la información que decides compartir con nosotros: tu nombre, apellido, correo electrónico, número de teléfono, estado de residencia y el tipo de servicio que necesitas.",
+    priv_2_titulo: "2. Cómo utilizamos tu información",
+    priv_2_texto: "La información que nos proporcionas se utiliza exclusivamente para contactarte, responder a tu solicitud, preparar cotizaciones o agendar una cita. No vendemos ni compartimos tu información personal con terceros no afiliados.",
+    priv_3_titulo: "3. Cookies y herramientas de terceros",
+    priv_3_texto: "Este sitio web utiliza cookies propias y de terceros para analizar el tráfico y mejorar tu experiencia. Puedes gestionar tus preferencias en cualquier momento desde nuestra Política de Cookies.",
+    priv_4_titulo: "4. Confidencialidad y Seguridad",
+    priv_4_texto: "Entendemos la sensibilidad de tu información, especialmente en asuntos relacionados con taxes e inmigración. Tus datos son tratados con estricta confidencialidad profesional.",
+    priv_5_titulo: "5. Tus derechos",
+    priv_5_texto: "Tienes derecho a solicitar el acceso, la corrección o la eliminación de tu información personal. Para ejercer estos derechos, puedes contactarnos a través de nuestro formulario o por WhatsApp.",
+    footer_privacidad: "Política de Privacidad",
+
         // TARJETAS DE SERVICIOS
     service1_title: "Familiar",
     service1_modalTitle: "Protección de salud para toda tu familia",
@@ -366,6 +382,22 @@ const translations = {
     politica_mas_info_texto: "If you have questions about how we use cookies, you can contact us through our",
     politica_mas_info_link: "contact form",
     politica_mas_info_final: "or via WhatsApp.",
+
+         // PRIVACY POLICY
+    priv_titulo_1: "Privacy",
+    priv_titulo_2: "Policy",
+    priv_actualizacion: "Last updated:",
+    priv_1_titulo: "1. Information we collect",
+    priv_1_texto: "When you use the contact form on this website, we collect the information you choose to share with us: your first and last name, email address, phone number, state of residence, and the type of service you need.",
+    priv_2_titulo: "2. How we use your information",
+    priv_2_texto: "The information you provide is used exclusively to contact you, respond to your request, prepare quotes, or schedule an appointment. We do not sell or share your personal information with unaffiliated third parties.",
+    priv_3_titulo: "3. Cookies and third-party tools",
+    priv_3_texto: "This website uses its own and third-party cookies to analyze traffic and improve your experience. You can manage your preferences at any time from our Cookie Policy.",
+    priv_4_titulo: "4. Confidentiality and Security",
+    priv_4_texto: "We understand the sensitivity of your information, especially in matters related to taxes and immigration. Your data is treated with strict professional confidentiality.",
+    priv_5_titulo: "5. Your rights",
+    priv_5_texto: "You have the right to request access, correction, or deletion of your personal information. To exercise these rights, you can contact us through our form or via WhatsApp.",
+    footer_privacidad: "Privacy Policy",
 
         // SERVICE CARDS
     service1_title: "Family",
